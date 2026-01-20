@@ -1,14 +1,7 @@
 import React from 'react';
-import { Activity } from '../types';
 import { X, Zap, ArrowRight } from 'lucide-react';
 
-interface ActivitySidebarProps {
-  activities: Activity[];
-  isOpen: boolean;
-  onClose: () => void;
-}
-
-const ActivitySidebar: React.FC<ActivitySidebarProps> = ({ activities, isOpen, onClose }) => {
+const ActivitySidebar = ({ activities, isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
@@ -31,7 +24,7 @@ const ActivitySidebar: React.FC<ActivitySidebarProps> = ({ activities, isOpen, o
       {/* List */}
       <div className="flex-1 overflow-y-auto p-5 custom-scrollbar">
         <div className="relative border-l border-gray-200 ml-3.5 space-y-8">
-            {activities.map((activity, index) => (
+            {activities.map((activity) => (
                 <div key={activity.id} className="relative pl-6 group">
                     {/* Timeline Dot */}
                     <div className="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-gray-300 ring-4 ring-white group-hover:bg-blue-500 transition-colors"></div>
