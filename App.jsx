@@ -5,7 +5,7 @@ import KanbanBoard from './components/KanbanBoard';
 import ActivitySidebar from './components/ActivitySidebar';
 import { INITIAL_TASKS, RECENT_ACTIVITY } from './constants';
 
-const App: React.FC = () => {
+const App = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   return (
