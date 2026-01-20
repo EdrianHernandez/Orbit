@@ -1,8 +1,8 @@
 import React from 'react';
-import { Search, Bell, Settings, Filter, Users, UserPlus } from 'lucide-react';
+import { Search, Bell, Filter, UserPlus } from 'lucide-react';
 import { USERS } from '../constants';
 
-const BoardHeader: React.FC = () => {
+const BoardHeader = () => {
   return (
     <header className="board-header bg-white border-b border-gray-200 px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sticky top-0 z-10">
       
