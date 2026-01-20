@@ -1,13 +1,11 @@
-import { Task, Activity, User } from './types';
-
-export const USERS: User[] = [
+export const USERS = [
   { id: 'u1', name: 'Alex Johnson', avatar: 'https://picsum.photos/id/64/100/100' },
   { id: 'u2', name: 'Sarah Williams', avatar: 'https://picsum.photos/id/65/100/100' },
   { id: 'u3', name: 'Mike Chen', avatar: 'https://picsum.photos/id/91/100/100' },
   { id: 'u4', name: 'Emily Davis', avatar: 'https://picsum.photos/id/177/100/100' },
 ];
 
-export const INITIAL_TASKS: Task[] = [
+export const INITIAL_TASKS = [
   {
     id: 't1',
     title: 'Research competitor analysis',
@@ -67,7 +65,7 @@ export const INITIAL_TASKS: Task[] = [
   },
 ];
 
-export const RECENT_ACTIVITY: Activity[] = [
+export const RECENT_ACTIVITY = [
   {
     id: 'a1',
     user: USERS[0],
