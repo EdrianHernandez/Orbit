@@ -1,0 +1,99 @@
+import { Task, Activity, User } from './types';
+
+export const USERS: User[] = [
+  { id: 'u1', name: 'Alex Johnson', avatar: 'https://picsum.photos/id/64/100/100' },
+  { id: 'u2', name: 'Sarah Williams', avatar: 'https://picsum.photos/id/65/100/100' },
+  { id: 'u3', name: 'Mike Chen', avatar: 'https://picsum.photos/id/91/100/100' },
+  { id: 'u4', name: 'Emily Davis', avatar: 'https://picsum.photos/id/177/100/100' },
+];
+
+export const INITIAL_TASKS: Task[] = [
+  {
+    id: 't1',
+    title: 'Research competitor analysis',
+    description: 'Deep dive into main competitors for Q3 strategy.',
+    priority: 'High',
+    status: 'To Do',
+    assignees: [USERS[0], USERS[2]],
+    commentsCount: 3,
+    attachmentsCount: 1,
+    dueDate: 'Tom',
+  },
+  {
+    id: 't2',
+    title: 'Design system updates',
+    priority: 'Medium',
+    status: 'To Do',
+    assignees: [USERS[1]],
+    commentsCount: 0,
+    attachmentsCount: 4,
+  },
+  {
+    id: 't3',
+    title: 'Client meeting preparation',
+    priority: 'High',
+    status: 'In Progress',
+    assignees: [USERS[0]],
+    commentsCount: 5,
+    attachmentsCount: 0,
+    dueDate: 'Today',
+  },
+  {
+    id: 't4',
+    title: 'Fix navigation bug on mobile',
+    priority: 'Low',
+    status: 'In Progress',
+    assignees: [USERS[2], USERS[3]],
+    commentsCount: 1,
+    attachmentsCount: 0,
+  },
+  {
+    id: 't5',
+    title: 'Q2 Financial Report',
+    priority: 'Medium',
+    status: 'Done',
+    assignees: [USERS[3]],
+    commentsCount: 8,
+    attachmentsCount: 2,
+  },
+  {
+    id: 't6',
+    title: 'Update landing page copy',
+    priority: 'Low',
+    status: 'Done',
+    assignees: [USERS[1]],
+    commentsCount: 2,
+    attachmentsCount: 1,
+  },
+];
+
+export const RECENT_ACTIVITY: Activity[] = [
+  {
+    id: 'a1',
+    user: USERS[0],
+    action: 'moved',
+    target: 'Client meeting preparation',
+    timestamp: '2 mins ago',
+  },
+  {
+    id: 'a2',
+    user: USERS[2],
+    action: 'commented on',
+    target: 'Fix navigation bug',
+    timestamp: '15 mins ago',
+  },
+  {
+    id: 'a3',
+    user: USERS[1],
+    action: 'attached file to',
+    target: 'Design system updates',
+    timestamp: '1 hour ago',
+  },
+  {
+    id: 'a4',
+    user: USERS[3],
+    action: 'completed',
+    target: 'Q2 Financial Report',
+    timestamp: '3 hours ago',
+  },
+];
