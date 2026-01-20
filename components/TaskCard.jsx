@@ -1,12 +1,10 @@
 import React from 'react';
-import { MessageSquare, Paperclip, Calendar, Clock } from 'lucide-react';
-import { Task, Priority } from '../types';
+import { MessageSquare, Paperclip, Clock } from 'lucide-react';
 
-interface TaskCardProps {
-  task: Task;
-}
-
-const getPriorityColor = (priority: Priority) => {
+/**
+ * Determines the CSS classes for the priority badge based on the priority level.
+ */
+const getPriorityColor = (priority) => {
   switch (priority) {
     case 'High':
       return 'bg-red-100 text-red-700 border-red-200';
@@ -19,7 +17,7 @@ const getPriorityColor = (priority: Priority) => {
   }
 };
 
-const TaskCard: React.FC<TaskCardProps> = ({ task }) => {
+const TaskCard = ({ task }) => {
   return (
     <div 
       className="task-item-card group relative bg-white p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer active:scale-[0.99]"
