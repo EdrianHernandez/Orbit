@@ -1,17 +1,12 @@
 import React from 'react';
 import { MoreHorizontal, Plus } from 'lucide-react';
 import TaskCard from './TaskCard';
-import { Task, Status, ColumnData } from '../types';
 
-interface KanbanBoardProps {
-  tasks: Task[];
-}
+const COLUMNS = ['To Do', 'In Progress', 'Done'];
 
-const COLUMNS: Status[] = ['To Do', 'In Progress', 'Done'];
-
-const KanbanBoard: React.FC<KanbanBoardProps> = ({ tasks }) => {
+const KanbanBoard = ({ tasks }) => {
   
-  const getTasksByStatus = (status: Status) => {
+  const getTasksByStatus = (status) => {
     return tasks.filter((task) => task.status === status);
   };
 
