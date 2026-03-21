@@ -1,0 +1,72 @@
+[
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-1.png",
+        "file_path": "components/BoardHeader.jsx",
+        "text_anchor": "I can't see the search bar or controls because they get covered by the kanban board when scrolling.",
+        "positive_node": "<header className=\"board-header bg-white border-b border-gray-200 px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sticky top-0 z-0\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-2.png",
+        "file_path": "components/ActivitySidebar.jsx",
+        "text_anchor": "I cannot access the activity feed on my phone because it's blocked by the main content.",
+        "positive_node": "<aside className=\"activity-sidebar w-12 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-0 md:relative shadow-xl md:shadow-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-3.png",
+        "file_path": "components/KanbanBoard.jsx",
+        "text_anchor": "I have to scroll down repeatedly to see each task column, making it impossible to compare tasks across boards.",
+        "positive_node": "<div className=\"h-full flex-col p-6 gap-6 min-w-max\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-4.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "The assignee avatars are stuck next to the comments count, making the card look cluttered and hard to read.",
+        "positive_node": "<div className=\"flex items-center mt-3 pt-3 border-t border-gray-50\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-5.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "I can't see the profile images clearly as they're cut off or partially hidden outside the task card.",
+        "positive_node": "<div className=\"flex -space-x-2 overflow-hidden -m-4\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-6.png",
+        "file_path": "components/TaskCard.jsx",
+        "text_anchor": "I cannot read the full task names because they're truncated to just a few characters.",
+        "positive_node": "<h3 className=\"text-sm font-semibold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors overflow-hidden whitespace-nowrap max-w-28\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-7.png",
+        "file_path": "components/KanbanBoard.jsx",
+        "text_anchor": "The cards are stacking awkwardly with too much space, making some cards invisible or overlapped.",
+        "positive_node": "<div className=\"flex-1 bg-gray-100/50 rounded-xl p-2 border border-gray-100/50 flex flex-col gap-9 overflow-y-auto custom-scrollbar\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-8.png",
+        "file_path": "components/BoardHeader.jsx",
+        "text_anchor": "I cannot see or use the search field effectively because it's shrunk to an unusable size.",
+        "positive_node": "<input type=\"text\" placeholder=\"Search tasks...\" className=\"pl-9 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 w-16 transition-all\" />"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-9.png",
+        "file_path": "components/ActivitySidebar.jsx",
+        "text_anchor": "The activity feed sidebar is unusable because it's too narrow to display any text or information.",
+        "positive_node": "<aside className=\"activity-sidebar w-12 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-0 md:relative shadow-xl md:shadow-none\">"
+    },
+    {
+        "github_repo": "https://github.com/EdrianHernandez/Orbit.git",
+        "image_anchor": "Orbit_bug-10.png",
+        "file_path": "App.jsx",
+        "text_anchor": "I can't tell if the sidebar modal is actually open because there's no visual feedback or dimming of the background.",
+        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}></div>"
+    }
+]
