@@ -4,7 +4,7 @@ import { USERS } from '../constants';
 
 const BoardHeader = () => {
   return (
-    <header className="board-header bg-white border-b border-gray-200 px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sticky top-0 z-10">
+    <header className="board-header bg-white border-b border-gray-200 px-6 py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4 sticky top-0 z-0">
       
       {/* Left: Title and Project Info */}
       <div className="flex items-center gap-4">
@@ -31,7 +31,7 @@ const BoardHeader = () => {
             <input 
                 type="text" 
                 placeholder="Search tasks..." 
-                className="pl-9 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 w-48 transition-all"
+                className="pl-9 pr-4 py-2 bg-gray-50 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 w-16 transition-all"
             />
         </div>
 

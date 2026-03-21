@@ -5,7 +5,7 @@ const ActivitySidebar = ({ activities, isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <aside className="activity-sidebar w-80 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-20 md:relative shadow-xl md:shadow-none">
+    <aside className="activity-sidebar w-12 bg-white border-l border-gray-200 flex flex-col h-full flex-shrink-0 absolute right-0 top-0 bottom-0 z-0 md:relative shadow-xl md:shadow-none">
       
       {/* Header */}
       <div className="p-5 border-b border-gray-100 flex items-center justify-between">

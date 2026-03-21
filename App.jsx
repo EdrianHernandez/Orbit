@@ -43,7 +43,7 @@ const App = () => {
 
         {/* Mobile Overlay Sidebar */}
          <div className={`md:hidden fixed inset-0 z-50 transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out`}>
-            <div className="absolute inset-0 bg-black/20 backdrop-blur-sm" onClick={() => setIsSidebarOpen(false)}></div>
+            <div className="absolute inset-0 bg-transparent backdrop-blur-sm" onClick={() => setIsSidebarOpen(false)}></div>
             <ActivitySidebar 
                 activities={RECENT_ACTIVITY} 
                 isOpen={isSidebarOpen} 

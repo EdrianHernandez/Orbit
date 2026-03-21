@@ -37,7 +37,7 @@ const TaskCard = ({ task }) => {
       </div>
 
       {/* Title */}
-      <h3 className="text-sm font-semibold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors">
+      <h3 className="text-sm font-semibold text-gray-900 mb-2 leading-snug group-hover:text-blue-600 transition-colors overflow-hidden whitespace-nowrap max-w-28">
         {task.title}
       </h3>
 
@@ -49,7 +49,7 @@ const TaskCard = ({ task }) => {
       )}
 
       {/* Meta Data & Assignees */}
-      <div className="flex items-center justify-between mt-3 pt-3 border-t border-gray-50">
+      <div className="flex items-center mt-3 pt-3 border-t border-gray-50">
         <div className="flex items-center space-x-3 text-gray-400">
           {(task.commentsCount > 0) && (
             <div className="flex items-center text-xs hover:text-gray-600">
@@ -66,7 +66,7 @@ const TaskCard = ({ task }) => {
         </div>
 
         {/* Assignees Stack */}
-        <div className="flex -space-x-2 overflow-hidden">
+        <div className="flex -space-x-2 overflow-hidden -m-4">
           {task.assignees.map((user) => (
             <img
               key={user.id}

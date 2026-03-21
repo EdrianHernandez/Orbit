@@ -12,7 +12,7 @@ const KanbanBoard = ({ tasks }) => {
 
   return (
     <div className="kanban-board-container flex-1 overflow-x-auto overflow-y-hidden bg-gray-50/50">
-      <div className="h-full flex p-6 gap-6 min-w-max">
+      <div className="h-full flex-col p-6 gap-6 min-w-max">
         {COLUMNS.map((status) => {
           const columnTasks = getTasksByStatus(status);
           const taskCount = columnTasks.length;
@@ -43,7 +43,7 @@ const KanbanBoard = ({ tasks }) => {
               </div>
 
               {/* Column Content */}
-              <div className="flex-1 bg-gray-100/50 rounded-xl p-2 border border-gray-100/50 flex flex-col gap-3 overflow-y-auto custom-scrollbar">
+              <div className="flex-1 bg-gray-100/50 rounded-xl p-2 border border-gray-100/50 flex flex-col gap-9 overflow-y-auto custom-scrollbar">
                 {columnTasks.length > 0 ? (
                     columnTasks.map((task) => (
                     <TaskCard key={task.id} task={task} />
