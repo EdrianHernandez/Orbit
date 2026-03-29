@@ -67,6 +67,6 @@
         "image_anchor": "Orbit_bug-10.png",
         "file_path": "App.jsx",
         "text_anchor": "The mobile overlay backdrop is completely transparent instead of semi-transparent, making it invisible.",
-        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}></div>"
+        "positive_node": "<div className=\"absolute inset-0 bg-transparent backdrop-blur-sm\" onClick={() => setIsSidebarOpen(false)}>"
     }
 ]
